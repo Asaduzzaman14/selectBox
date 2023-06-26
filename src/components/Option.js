@@ -2,14 +2,8 @@ import React from 'react';
 
 const Option = ({ data, setOption, setId, openModal }) => {
 
-
-
  return (
   <>
-
-
-
-
    <option
     onClick={() => {
      setOption(data.text);

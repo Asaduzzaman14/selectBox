@@ -17,7 +17,7 @@ function App() {
 
   // get all data from DB
   const getDate = () => {
-    fetch('http://localhost:5000/all-options')
+    fetch('https://server-sigma-flax.vercel.app/all-options')
       .then(res => res.json())
       .then(data => { setData(data?.data); })
       .catch(error => {
@@ -45,7 +45,7 @@ function App() {
     }
 
     // console.log(data);
-    fetch(`http://localhost:5000/addData/${id}`, {
+    fetch(`https://server-sigma-flax.vercel.app/addData/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-type': 'application/json',
@@ -84,7 +84,7 @@ function App() {
       name: userData
     }
     console.log(data);
-    fetch(`http://localhost:5000/updateData/${id}`, {
+    fetch(`https://server-sigma-flax.vercel.app/updateData/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-type': 'application/json',
