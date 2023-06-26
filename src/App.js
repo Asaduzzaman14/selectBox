@@ -68,7 +68,7 @@ function App() {
   // modal function
   const openModal = (data) => {
     if (!name) {
-      alert('you are not able to this data')
+      alert('you are not able to Update this data')
       return
     }
     setUserData(data?.user?.name)
