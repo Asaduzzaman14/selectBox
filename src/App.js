@@ -17,7 +17,7 @@ function App() {
 
   // get all data from DB
   const getDate = () => {
-    fetch('https://server-sigma-flax.vercel.app/all-options')
+    fetch('https://server-wdbu.onrender.com/allOptions')
       .then(res => res.json())
       .then(data => { setData(data?.data); })
       .catch(error => {
@@ -45,7 +45,7 @@ function App() {
     }
 
     // console.log(data);
-    fetch(`https://server-sigma-flax.vercel.app/addData/${id}`, {
+    fetch(`https://server-wdbu.onrender.com/addData/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-type': 'application/json',
@@ -84,7 +84,7 @@ function App() {
       name: userData
     }
     console.log(data);
-    fetch(`https://server-sigma-flax.vercel.app/updateData/${id}`, {
+    fetch(`https://server-wdbu.onrender.com/updateData/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-type': 'application/json',
